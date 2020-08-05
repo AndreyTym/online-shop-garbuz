@@ -47,3 +47,10 @@ body {
 /* .btn {
   padding: 0.75rem 0.7rem;
 } */
+.btn.btn-info {
+  background-color: orange;
+}
+
+.btn.btn-primary {
+  background-color: orange;
+}
