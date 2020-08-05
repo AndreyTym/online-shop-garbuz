@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "Жовтий квадрокоптер",
+    "image": "yellow-drone.png",
+    "description": "Large yellow drone for most critical missions. Can carry load.",
+    "price": 499.99
+  },
+  {
+    "id": "2",
+    "title": "Лак для нігтів",
+    "image": "nail-022.jpg",
+    "description": "Яскравий та стійкий лак.",
+    "price": 9.99
+  },
+  {
+    "id": "3",
+    "title": "Кольорові олівці",
+    "image": "pencils-10.jpg",
+    "description": "Олывцы для малювання, 10 штук.",
+    "price": 1.99
+  }
+]
