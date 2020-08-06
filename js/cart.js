@@ -30,7 +30,7 @@ class Cart {
       total += product.price * this.cart[id];
       cartDomSting += `<div class="row" data-id="${id}"> 
                       <div class="col-5">${product.title}</div>
-                      <div class="col-3">${product.price}</div>
+                      <div class="col-3"> ${product.price}</div>
                       <div class="col-2">${this.cart[id]}</div>
                       <div class="col-1"><button data-id=${id} class="btn btn-sm plus">+</button></div>
                       <div class="col-1"><button data-id=${id} class="btn btn-sm minus">-</button></div>
@@ -40,7 +40,7 @@ class Cart {
     cartDomSting += `
                   <div class="row">
                       <div class="col-5"><strong>РАЗОМ</strong></div>
-                      <div class="col-3"><strong>$${total}</strong></div>
+                      <div class="col-3"><strong>грн ${total}</strong></div>
                   </div>            
           </div>`;
     this.cartContainer.querySelector(
@@ -89,7 +89,7 @@ class Cart {
   }
   order(ev) {
     if (this.cartLength() === 0) {
-      window.showAlert("Please choose products to order", false);
+      window.showAlert("Будь ласка оберіть товари", false);
       return;
     }
     const form = this.cartContainer.querySelector(".form-contacts");
@@ -124,7 +124,7 @@ class Cart {
         })
         .catch((error) => showAlert("There is an error: " + error, false));
     } else {
-      window.showAlert("Please fill form correctly", false);
+      window.showAlert("Будь ласка, заповніть форму правильно", false);
     }
   }
 }

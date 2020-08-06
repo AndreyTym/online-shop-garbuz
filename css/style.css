@@ -49,8 +49,18 @@ body {
 } */
 .btn.btn-info {
   background-color: orange;
+  border-color: peru;
 }
 
 .btn.btn-primary {
   background-color: orange;
+  border-color: peru;
+}
+.btn.btn-outline-success {
+  color: orange;
+  border-color: ;
+}
+
+.btn.btn-secondary {
+  background-color: rgb(100, 79, 79);
 }

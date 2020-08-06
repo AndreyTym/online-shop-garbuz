@@ -24,7 +24,7 @@ class ProductList {
                             data-target="#productInfoModal" data-id="${product.id}">Info
                           </button>
                           <button class="btn btn-primary buy" data-id="${product.id}">
-                            грн${product.price} - Купити
+                            грн ${product.price} - Купити
                           </button>
                         </div>
                       </div>
@@ -63,7 +63,7 @@ class ProductList {
     modal.querySelector(".modal-body .card-text").innerText =
       product.description;
     const btnBuy = modal.querySelector("button.buy");
-    btnBuy.innerText = `грн${product.price} - Buy`;
+    btnBuy.innerText = `грн ${product.price} - Купити`;
     btnBuy.dataset.id = id;
   }
   handleProductBuyClick(event) {
